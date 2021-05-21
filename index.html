@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Hello World</title>
+    <title>Hufqcot</title>
 
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -29,11 +29,11 @@
 </head>
 <body>
     <div class="hero-content">
-        <header class="site-header">
+        <header class="site-header box-shadow">
             <div class="top-header-bar">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
+                        <div class="col-11 d-none d-md-flex flex-wrap justify-content-around justify-content-lg-around mb-3 mb-lg-0">
                             <div class="header-bar-email d-flex align-items-center">
                                 <i class="fa fa-envelope"></i><a href="#">hufqcotenquiries@gmail.com</a>
                             </div><!-- .header-bar-email -->
@@ -43,25 +43,11 @@
                             </div><!-- .header-bar-text -->
                         </div><!-- .col -->
 
-                        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
-                            <!-- <div class="header-bar-search">
-                                <form class="flex align-items-stretch">
-                                    <input type="search" placeholder="What would you like to learn?">
-                                    <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
-                                </form>
-                            </div>.header-bar-search -->
-
-                            <div class="header-bar-menu align-self-end">
-                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
-                                    <li><a href="login.html" class="btn p-2 pr-4 pl-4 btn2">Login</a></li>
-                                </ul>
-                            </div><!-- .header-bar-menu -->
-                        </div><!-- .col -->
                     </div><!-- .row -->
                 </div><!-- .container-fluid -->
             </div><!-- .top-header-bar -->
 
-            <div class="nav-bar">
+            <div class="nav-bar col-11 m-auto">
                 <div class="container">
                     <div class="d-flex justify-content-between">
                             <img src="./images/hufqot__1_-removebg-preview.png" alt="HUFQCOT" srcset="" width="50px" height="50px">
@@ -77,9 +63,8 @@
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration</a>
                                         <div class="dropdown-menu" aria-labelledby="dropdown04">
-                                          <a class="dropdown-item" href="registration/studentReg.html">STUDENT REGISTERATION</a>
-                                          <a class="dropdown-item" href="registration/memberReg.html"> MEMBERS REGISTERATION</a>
-                                          <a class="dropdown-item" href="registration/hafizReg.html">HAFIZ RECRUITMENT</a>
+                                          <a class="dropdown-item" href="memberReg.html"> MEMBER'S REGISTERATION</a>
+                                          <a class="dropdown-item" href="hafizReg.html">HAFIZ RECRUITMENT</a>
                                         </div>
                         
                                       </li>
@@ -87,11 +72,14 @@
                                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Others</a>
                                         <div class="dropdown-menu" aria-labelledby="dropdown04">
                                           <a class="dropdown-item" href="donation.html">Payment & Donation</a>
-                                          <a class="dropdown-item" href="result.html"> Result</a>
+                                          <a class="dropdown-item" href="login.html"> Result</a>
                                         </div>
                         
                                       </li>
                                     <li><a href="contact.html">Contact</a></li>
+
+                                    <li><a href="login.html" class="btn">Login</a></li>
+
                                 </ul>
 
                                 <div class="hamburger-menu d-lg-none">
@@ -120,8 +108,82 @@
                             </header><!-- .entry-header --> -->
 
                             <div class="d-flex flex-lg-row flex-md-column flex-wrap justify-content-lg-between justify-content-center align-items-center entry-footer read-more w-80">
-                                <a href="#" class="btn2 terms mr-lg-4 mb-lg-0 mb-4">School Registration</a>
-                                <a href="#" class="btn term">Terms & Condition</a><br>
+                                
+                                <a href="#" class="btn2 terms mr-lg-4 mb-lg-0 mb-4" data-toggle="modal" data-target=".bd-example-modal-lg">School Registration</a>
+                                <!-- *********************
+                                    MODAL FOR SCHOOL REGISTRATION
+                                 ********************-->
+                                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                      <div class="modal-content">
+                                        <form class="contact-form p-0 pt-5 m-auto col-10">
+                                            <h3 class="entry-title mb-2 mt-2 text-center display-4">School Registration</h3><hr class="mb-4 mx-auto"/>
+                                              <div class="form-group col-md-10">
+                                                <label for="inputDigits" class="entry title">Enter Scratch Card</label>
+                                                <input type="number" class="form-control" id="inputDigits" required placeholder="Enter Scratch Card">
+                                                <button type="submit" class="btn">Verify and Register</button>
+                                            </div>
+                                    
+                                          </form>
+                                          <div class="modal-footer">
+                                            <a  class="btn green-text" data-dismiss="modal">Close</a>
+                                          </div>
+                                      </div>
+
+                                    </div>
+                                  </div>
+
+                                  <!-- TERMS & CONDITION BUTTON-->
+                                <a href="#" class="btn term"  data-toggle="modal" data-target="#exampleModalLong">Terms & Condition</a><br>
+
+                                  <!-- TERMS & CONDITION MODAL-->
+                                <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                      <div class="modal-content">
+                                        <div class="modal-header">
+                                          <h5 class="modal-title green-text col-11 text-center" id="exampleModalLongTitle">
+                                                <b>H.U.F.Q.C.O.T</b> TERMS & CONDITION
+                                            </h5>
+                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                          </button>
+                                        </div>
+                                        <div class="modal-body">
+                     
+                                            As-Salaamu’Alaikum Wa-Rahmatullaahi Wa-Barakaatuh!
+                                            Welcome to Huffaaz Foundation For Qur'anic Competition and training (<b>H.U.F.Q.C.O.T</b>)
+                                            <br> <br><h3 class="text-center">Terms and Conditions: </h3><hr class="m-auto"><br> (“Terms 
+                                            ACCEPTANCE:- <br>
+                                            The decision of <b>H.U.F.Q.C.O.T</b> to accept your application is made on the basis of the information that you have provided on the application form. If the <b>H.U.F.Q.C.O.T</b> shall find that you have made a false statement, or have left out significant information, <b>H.U.F.Q.C.O.T</b> reserves the right either to disqualify your application or to suspend/ terminate and reserve the right to take on further steps deemed appropriate. <br> <br>
+                                            PAYMENTS: <br>
+                                            Any fee payments made to the <b>H.U.F.Q.C.O.T</b>, be it demurrage fees or Fine/ Tax charges or ANY Application Processing Fees is non refundable due to the modest fees we charge. Therefore, you are requested to understand the policies and requirements clearly. <br> <br>
+                                            ELECTRONIC COMMUNICATIONS: <br>
+                                            Since we offer all our services through the internet. The emails which you send us are the means of electronic communication. We communicate with you via emails or by posting notices to our website. You should agree that all agreements, notices, disclosures and other communications we provide to you electronically (via emails, site news, etc) satisfy all requirements and should be considered equivalent to such communications in writing. <br> <br>
+                                            COPYRIGHT:  <br>
+                                            All content included on the website such as text, logos, images, graphics, button icons, digital downloads, data compilations, software, etc. is the property of the H.U.F.Q.C.O.T. The course material provided is confidential and copyrighted. You may keep a copy on your PC and print out a copy for your personal use if necessary but you are not allowed to distribute it to others. <br> <br>
+                                            LICENSE AND WEBSITE ACCESS:<br>
+                                            H.U.F.Q.C.O.T grants you a unlimited license to access and make personal use of This license does not include any resale or commercial use of the contents for the benefit of an individual or a similar/organization. <br> <br>
+                                            RISK OF LOSS: <br>
+                                            Please note that the password to your <b>H.U.F.Q.C.O.T</b> account is an amaanah (Trust). You are expected to guard your password and not to share it even with your family members. No test reset requests will be processed if anybody happens to misuse your account. And you will be responsible for any misuse or miscommunication through your account. <br> <br>
+                                            STAFF RECORDS: <br>
+                                            The H.U.F.Q.C.O.T is not required to retain records other than the transcripts of the staff and credits obtained or return anything submitted for the applications <br> <br>
+                                            TERMINATION: <br>
+                                            Notwithstanding any of these Terms of Use, the cou reserves the right, without notice and in its sole discretion, to terminate your license to use the Sites, the Services or any portion thereof, and to block or prevent in future your access to and use of the Sites or any of the Services:  <br> <br>
+                                            MODIFICATIONS TO TERMS OF USE:  <br>
+                                            The council reserves the right to change or modify any of the terms and conditions contained in the Terms of Use, at any time and in its sole discretion. If the council changes or modifies these Terms of Use, the council will post the changes to these Terms of Use on the Sites and will indicate at the top of this page the date these Terms of Use were last revised. Any changes or modifications will be effective immediately upon posting of the revisions to the Sites, your continued use of any of the Sites or the Services following the posting of changes or modifications will constitute and confirm your agreement to and acceptance of such changes or modifications. It is your responsibility to regularly check this Site to determine if there have been changes to these Terms of Use and to review such changes. If you do not agree to the amended terms, you must stop using the Sites and the Services.<br> <br> 
+                                            DISPUTES:<br>
+                                            Any disputes arising during your process at <b>H.U.F.Q.C.O.T</b> are subject to final decision of the <b>H.U.F.Q.C.O.T</b> Admin. <br> <br>
+                                            QUESTIONS:  <br>
+                                            You may visit our FAQs pages and if you do not see your queries answered therein, you may contact the concerned person specified on the contact page.
+                                            
+                                         </div>
+                                        <div class="modal-footer">
+                                          <a class="btn2" data-dismiss="modal">Close</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <!-- **************** -->
 
                             </div><!-- .entry-footer -->
                                           <a href="https://chat.whatsapp.com/2dO8aIUelv4KIlvLFDL2m6" class="mt-5 green-text">
@@ -209,7 +271,7 @@
           -------------------- -->
     <section class="about-section" id="About">
         <div class="container">
-            <div class="row">
+            <div class="row col-11 m-auto">
                 <div class="col-12 col-lg-6 align-content-lg-stretch">
                     <header class="heading">
                         <h2 class="entry-title mb-2">About HUFQCOT</h2><hr>
@@ -464,15 +526,6 @@
         <div class="footer-widgets">
             <div class="container">
                 <div class="row">
-                    <!-- <div class="col-12 col-md-6 col-lg-3">
-                        <div class="foot-about">
-                            <img src="./images/hufqot__1_-removebg-preview.png" alt="HUFQCOT" srcset="" width="50px" height="50px">
-
-                            <p>Incase you have any question or suggestion kindly drop us a message by filling the quick 
-                                form below we promise to threat all suggestion and messages with respect.</p>
-
-                        </div><!-- .foot-about -->
-                    <!-- </div>.col -->
 
                     <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0 mb-5">
                         <div class="foot-contact">
@@ -493,10 +546,10 @@
                             <h2 class="w-100">Quick Links</h2>
 
                             <ul class="w-50">
-                                <li><a href="#">About </a></li>
-                                <li><a href="#">Terms of Use </a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#About">About </a></li>
+                                <li><a href="" class="" data-toggle="modal" data-target="#exampleModalLong">Terms of Use </a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
 
                         </div><!-- .quick-links -->
@@ -509,9 +562,9 @@
                         <p>Subscribe to HUFQCOT Newsletter</p>
 
                         <form>
-                          <input type="text" placeholder="Your name" required="">
+                          <input type="text" required placeholder="Your name" required="">
                           <div class="flex align-items-baseline">
-                            <input type="text" placeholder="Your email here" required="">
+                            <input type="text" required placeholder="Your email here" required="">
                             <button type="submit" class=""><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
                           </div>
                         </form>
@@ -552,9 +605,45 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
-<a href="registration/modal.html" class="scroll-up text-white">
+
+<!-- ASK QUESTION MODAL -->
+<a href="registration/modal.html" class="scroll-up text-white" data-toggle="modal" data-target=".example-modal-lg">
     <i class="fa fa-comments" style="font-size: 30px; color: white;"></i>
 </a>
+<div class="modal fade example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+          <div class="modal-header p-5">
+            <h4 class="modal-title text-center">Have any question to ask hufqcot ? send us a quick message and we will reply in a jiffy!</h4>
+          </div>
+        <div class="contact-form col-12 m-auto">
+            <form>
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                        <label for="">Your Name (optional)</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <label for="">Your Email Address</label>
+                
+                        <input type="email" class="form-control" name="email" required="" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                    </div>
+                </div>
+
+                <div class="col-md-12 form-group">
+                    <label for="">Message Subject (optional)</label>
+                        <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                </div>
+                <div class="col-md-12 form-group">
+                    <label for="">Message Body</label>
+                        <textarea class="form-control" name="message" required="" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message" spellcheck="false"></textarea>
+                         <button type="submit" class="btn btn-default">SEND MESSAGE</button>
+                </div>
+            </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 </html>
