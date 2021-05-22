@@ -20,7 +20,8 @@ img {
 }
 
 footer {
-    margin-top: 100px;
+    padding-top: 100px;
+    background-color: #f4f8f6;
 }
 
 /*--------------------------------------------------------------
@@ -79,7 +80,7 @@ a.btn2 {
 }
 
 a.btn2:hover {
-    border: 3px solid #409d7e !important;
+    border: 3px solid #1b734f!important;
     background-color: transparent !important;
 }
 
@@ -97,7 +98,7 @@ a.btn2:hover {
  }
 
  .list-group-item.active {
-    background-color: #409d7e !important;
+    background-color: #1b734f!important;
     border-color: none;
   }
 
@@ -302,9 +303,9 @@ h2 > span {
     .read-more {
         flex-direction: column;
     }
-    .box-shadow {
+    /* .box-shadow {
         box-shadow: 0 3px 1px 0 #409d7e;
-    }
+    } */
 }
 
 /*
@@ -312,8 +313,8 @@ h2 > span {
 ----------------------------------------*/
 .hamburger-menu {
     position: relative;
-    width: 24px;
-    height: 22px;
+    width: 50px;
+    height: 50px;
     margin: 0 auto;
     transition: .5s ease-in-out;
     cursor: pointer;
@@ -322,9 +323,9 @@ h2 > span {
 .hamburger-menu span {
     display: block;
     position: absolute;
-    height: 2px;
+    height: 3px;
     width: 100%;
-    background: #fff;
+    background: #1b734f;
     border-radius: 10px;
     opacity: 1;
     left: 0;
@@ -332,19 +333,19 @@ h2 > span {
 }
 
 .hamburger-menu span:nth-child(1) {
-    top: 2px;
+    top: 15px;
 }
 
 .hamburger-menu span:nth-child(2),
 .hamburger-menu span:nth-child(3) {
-    top: 10px;
+    top: 28px;
 }
 
 .template > span {
     background: #409d7e;
 }
 .hamburger-menu span:nth-child(4) {
-    top: 18px;
+    top: 40px;
 }
 
 .hamburger-menu.open span:nth-child(1) {
@@ -389,13 +390,13 @@ h2 > span {
 .site-navigation.show ul {
     left: 0;
     box-shadow: 0 4px 6px 0 rgb(0 0 0 / 20%);
-    height: 400px;
+    height: auto;
 }
 
 .site-navigation ul li a {
     display: block;
     padding: 12px 20px;
-    color: #fff;
+    /* color: #fff; */
     text-decoration: none;
     text-transform: uppercase;
     max-width: max-content;
@@ -446,16 +447,17 @@ h2 > span {
 # Hero Section
 --------------------------------------------------------------*/
 .hero-content {
-    background: url("images/hero-bg.jpg") no-repeat center;
+    /* background: url("images/hero-bg.jpg") no-repeat center; */
     background-size: cover;
 }
 
-.hero-content-overlay {
+/* .hero-content-overlay {
     background: rgba(21,20,33,.5);
-}
+} */
 
-.hero-content-wrap {
-    height: 820px;
+.hero-content-wrap,
+.hero-content-overlay > img  {
+    height: auto;
     padding-top: 130px;
 }
 
@@ -472,7 +474,7 @@ h2 > span {
     font-size: 40px;
     font-weight: 500;
     text-transform: uppercase;
-    color: #fff;
+    /* color: #fff; */
 }
 
 @media screen and (max-width: 576px){
@@ -487,13 +489,15 @@ h2 > span {
 }
 
 .hero-content-wrap .read-more {
+    margin: auto;
     margin-top: 40px;
+    height: 120px;
 }
 
 .hero-content-wrap .read-more a {
     display: block;
     /* width: max-content; */
-    padding: 12px 40px;
+    padding: 12px 30px;
     font-size: 13px;
     font-weight: bold;
     color: #fff;
@@ -2661,13 +2665,33 @@ ul.author-social-profile li:hover .fa {
 .contact-form textarea,
 .contact-form select {
     width: 100%;
-    padding: 12px 20px;
+    padding: 12px 0px;
     margin-top: 10px;
-    border: 1px solid #ebebeb;
-    background: #f7f7f7;
-    color: #383749;
+    border: none;
+    border-bottom: 2px solid #ebebeb;
+    border-radius: 0px;
+    color: #999;
+}
+label {
+    display: none;
+}
+input:focus,
+select:focus,
+textarea:focus{
+    box-shadow: none !important;
+    border-bottom:2px solid #1b734f!important;
 }
 
+select > option {
+    background: #fff;
+    color: #222;
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb;
+    border-top: 1px solid #ebebeb;
+}
+option:hover {
+    background: #409d7e;
+}
 select.form-control:not([size]):not([multiple]) {
     height: auto !important;
   }
@@ -2782,7 +2806,7 @@ button[type="submit"]{
 }
 
 p.footer-copyright {
-    color: white;
+    color: black;
 }
 
 .footer-widgets h2 {
@@ -2840,7 +2864,6 @@ p.footer-copyright {
 .footer-bar {
     padding: 30px 0;
     border-top: 1px solid #ebebeb;
-    background-color: #409d7e;
 }
 
 .footer-bar .download-apps a {
@@ -2870,7 +2893,7 @@ p.footer-copyright {
 }
 
 .footer-bar-nav ul li a {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 

@@ -48,9 +48,9 @@
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration</a>
                                         <div class="dropdown-menu" aria-labelledby="dropdown04">
-                                          <a class="dropdown-item" href="registration/studentReg.html">STUDENT REGISTERATION</a>
-                                          <a class="dropdown-item" href="registration/memberReg.html"> MEMBERS REGISTERATION</a>
-                                          <a class="dropdown-item" href="registration/hafizReg.html">HAFIZ RECRUITMENT</a>
+                                          <a class="dropdown-item" href="studentReg.html">STUDENT REGISTERATION</a>
+                                          <a class="dropdown-item" href="memberReg.html"> MEMBERS REGISTERATION</a>
+                                          <a class="dropdown-item" href="hafizReg.html">HAFIZ RECRUITMENT</a>
                                         </div>
                         
                                       </li>
@@ -82,7 +82,7 @@
  
     </div>
 
-    <form class="contact-form p-0 pt-5 m-auto col-10">
+    <form class="contact-form p-0 pt-5 m-auto col-10 pb-5">
         <h2 class="entry-title mb-5 mt-2 text-center">Member's Registration</h2><hr class="mb-5 mx-auto"/>
         <div class="form-row">
           <div class="form-group col-md-6">
@@ -107,12 +107,12 @@
           </div>
           <div class="form-group col-md-6">
             <label for="inputDateofBirth">Date of Birth</label>
-            <input type="date" class="form-control" id="inputDateofBirth" placeholder="">
+            <input type="date" class="form-control" id="inputDateofBirth" placeholder="dd---yyyy">
           </div>
           <div class="form-group col-md-6">
               <label for="inputGender">Gender</label>
               <select id="inputGender" class="form-control">
-                <option selected>Choose...</option>
+                <option selected>Gender</option>
                 <option>Male</option>
                 <option>Female</option>
               </select>
@@ -120,7 +120,7 @@
           <div class="form-group col-md-6">
               <label for="inputMaritalStatus">Marital Status</label>
               <select id="inputMaritalStatus" class="form-control">
-                <option selected>Select Status</option>
+                <option selected>Marital Status</option>
                 <option>Male</option>
                 <option>Married</option>
               </select>
@@ -135,8 +135,8 @@
           </div>
           <div class="form-group col-md-6">
             <label for="inputAddress">Residential Address</label>
-            <div class=""><grammarly-extension data-grammarly-shadow-root="true" style="position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension><grammarly-extension data-grammarly-shadow-root="true" style="mix-blend-mode: darken; position: absolute; top: 0px; left: 0px; pointer-events: none;" class="cGcvT"></grammarly-extension>
-                <textarea name="address" required="" value="" class="form-control" spellcheck="false"></textarea>	                 
+            <div class="">
+                <textarea name="address" required="" value="" class="form-control" spellcheck="false" placeholder="Residential Address"></textarea>	                 
             </div>
          </div>
          <div class="form-group col-md-6">
@@ -170,7 +170,7 @@
           <div class="form-group col-md-4">
             <label for="input">Hafiz Qualification</label>
             <select name="hafiz_qualification" value="" required="" class="form-control">
-                <option value="">Select Qualification</option>
+                <option value="">Hafiz Qualification</option>
                 <option value="completed">Completed</option>
                 <option value="average">Average</option>
                 <option value="none">None</option>
@@ -179,7 +179,7 @@
           <div class="form-group col-md-4">
             <label for="state_obtained">State Obtained</label>
             <select name="state_obtained" required="" value="" class="form-control">
-                <option value="">Select One</option>
+                <option value="">State Obtained<</option>
                 <option value="lagos">Lagos</option>
                 <option value="abuja">Abuja</option>
                 <option value="kano">Kano</option>
@@ -199,7 +199,7 @@
           </div>
             <div class="form-group col-md-4">
               <label for="inputUstaz">Ustaz</label>
-              <input type="text" class="form-control" id="inputUstaz">
+              <input type="text" class="form-control" id="inputUstaz" placeholder="Ustaz Name">
             </div>
         </div>
 
@@ -208,7 +208,7 @@
                 <label for="country" class="control-label">Participated in Musabaqaoh before ? </label>
                 <div class="">
                      <select name="participated" value="" required="" class="form-control">
-                         <option value="">Select One</option>
+                         <option value="">Participated in Musabaqaoh before ? </option>
                          <option value="yes">Yes</option>
                          <option value="no">No</option>
                      </select>
@@ -216,39 +216,41 @@
               </div>
               <div class="form-group col-md-4">
                 <label for="inputFirstName">Year</label>
-                <input type="date" class="form-control" required="" value="" name="year_participated">
+                <input type="date" class="form-control" required="" value="" name="year_participated" placeholder="Year">
               </div>
             <div class="form-group col-md-4">
                 <label for="inputUstaz">Position</label>
-                <input type="text" class="form-control" id="inputPosition">
+                <input type="text" class="form-control" id="inputPosition" placeholder="Position">
               </div>
             </div>
 
 
         <div class="row">
           <div class="form-group col-md-6">
-            <label for="country" class=" control-label">Valid Means of Identification </label>
-            
-            <div class="">
-                <input type="file" name="identification" value="" required="" class="form-control" multiple="">
-            </div>
-             <small for="country" class=" control-label"><span style="color:#5cb85c;">E.g Image of international passport, licence document or image, Voters Card etc,</span></small>
-          </div>
-          <div class="form-group col-md-6">
             <label for="country" class="control-label">Bank Verification Number (BVN) </label>
             <div class="">
                  <input type="number" required="" name="bvn" value="" placeholder="Bank Verification Number (BVN)" class="form-control" ="">
             </div>
           </div>
-          <div class="form-group col-md-6">
+          <div class="form-group col-md-3">
+            <label for="country" class=" control-label">Valid Means of Identification </label>
+            
+            <div class="">
+                <input type="file" name="identification" value="" required="" class="form-control" multiple=""  placeholder="Valid Means of Identification ">
+            </div>
+             <small for="country" class=" control-label"><span style="color:#5cb85c;">Valid Means of Identification E.g Image of international passport, licence document or image, Voters Card etc,</span></small>
+          </div>
+
+          <div class="form-group col-md-3">
             <label for="country" class="control-label">Profile Picture </label>
             <div class="">
-                 <input type="file" required="" name="profile_picture" value="" class="form-control" autofocus="">
+                 <input type="file" required="" name="profile_picture" value="" class="form-control">
             </div>
+            <small for="country" class=" control-label"><span style="color:#5cb85c;">Upload Profile Picture </span></small>
           </div>
         </div>
 
-        <button type="submit" class="btn">Register</button>
+        <button type="submit" class="btn col-12 col-md-6 col-lg-4 m-auto">Register</button>
       </form>
         <footer class="site-footer mt-6">
             <div class="footer-widgets">
@@ -256,7 +258,7 @@
                     <div class="row">
                         <!-- <div class="col-12 col-md-6 col-lg-3">
                             <div class="foot-about">
-                                <img src="./images/hufqot__1_-removebg-preview.png" alt="HUFQCOT" srcset="" width="50px" height="50px">
+                                <img src="./images/hufqot__1_-removebg-preview.png" alt="HUFQCOT" srcset="" width="60px" height="60px">
     
                                 <p>Incase you have any question or suggestion kindly drop us a message by filling the quick 
                                     form below we promise to threat all suggestion and messages with respect.</p>
