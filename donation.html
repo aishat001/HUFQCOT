@@ -29,76 +29,76 @@
 <body class="blog-page">
     
     <div class="page-header">
-        <header class="site-header">
-            <div class="top-header-bar">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12 col-lg-6 d-none d-md-flex flex-wrap justify-content-center justify-content-lg-start mb-3 mb-lg-0">
-                            <div class="header-bar-email d-flex align-items-center">
-                                <i class="fa fa-envelope"></i><a href="#">hufqcotenquiries@gmail.com</a>
-                            </div><!-- .header-bar-email -->
-
-                            <div class="header-bar-text lg-flex align-items-center">
-                                <p><i class="fa fa-phone"></i>+234 803 968 8103</p>
-                            </div><!-- .header-bar-text -->
-                        </div><!-- .col -->
-
-                        <div class="col-12 col-lg-6 d-flex flex-wrap justify-content-center justify-content-lg-end align-items-center">
-                            <!-- <div class="header-bar-search">
-                                <form class="flex align-items-stretch">
-                                    <input type="search" placeholder="What would you like to learn?">
-                                    <button type="submit" value="" class="flex justify-content-center align-items-center"><i class="fa fa-search"></i></button>
-                                </form>
-                            </div>.header-bar-search -->
-
-                            <div class="header-bar-menu align-self-end">
-                                <ul class="flex justify-content-center align-items-center py-2 pt-md-0">
-                                    <li><a href="#" class="btn p-2 pr-4 pl-4 btn2">Login</a></li>
-                                </ul>
-                            </div><!-- .header-bar-menu -->
-                        </div><!-- .col -->
-                    </div><!-- .row -->
-                </div><!-- .container-fluid -->
-            </div><!-- .top-header-bar -->
-
-            <div class="nav-bar">
-                <div class="container">
+        <header class="site-header box-shadow">
+            <div class="nav-bar col-12">
+                <div class="container-fluid col-12 col-lg-11 m-auto">
                     <div class="d-flex justify-content-between">
                             <img src="./images/hufqot__1_-removebg-preview.png" alt="HUFQCOT" srcset="" width="50px" height="50px">
 
 
-                        <div class="col-3 col-lg-9 flex justify-content-end align-content-center">
+                        <div class="col-3 col-lg-11 flex justify-content-end align-content-center">
                             <nav class="site-navigation flex justify-content-end align-items-center">
                                 <ul class="flex flex-column flex-lg-row justify-content-lg-end align-content-center">
                                     <li class="current-menu-item" ><a href="./index.html">Home</a></li>
-                                    <li><a href="#About">About</a></li>
                                     <li><a href="solat.html">Solat Time</a></li>
                                     <li><a href="news.html">News</a></li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registration</a>
                                         <div class="dropdown-menu" aria-labelledby="dropdown04">
-                                          <a class="dropdown-item" href="registration/studentReg.html">STUDENT REGISTERATION</a>
-                                          <a class="dropdown-item" href="registration/memberReg.html"> MEMBERS REGISTERATION</a>
-                                          <a class="dropdown-item" href="registration/hafizReg.html">HAFIZ RECRUITMENT</a>
+                                        <a class="dropdown-item" href="memberReg.html"> MEMBER'S REGISTERATION</a>
+                                        <a class="dropdown-item" href="hafizReg.html">HAFIZ RECRUITMENT</a>
                                         </div>
                         
-                                      </li>
+                                    </li>
                                     <li class="nav-item dropdown">
                                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Others</a>
                                         <div class="dropdown-menu" aria-labelledby="dropdown04">
-                                          <a class="dropdown-item" href="donation.html">Payment & Donation</a>
-                                          <a class="dropdown-item" href="result.html"> Result</a>
+                                        <a class="dropdown-item" href="donation.html">Payment & Donation</a>
+                                        <a class="dropdown-item" href="login.html" data-toggle="modal" data-target=".login-modal-lg"> Result</a>
                                         </div>
                         
-                                      </li>
-                                    <li><a href="#contact">Contact</a></li>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+
+                                    <li class="ml-3"><a href="login.html" class="btn2" data-toggle="modal" data-target=".login-modal-lg">Login</a></li>
+
+                                    <div class="modal fade login-modal-lg" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="contact-form col-12 m-auto p-5">
+                                                <h4 class="entry-title text-center mb-3 text-secondary">Login to Continue</h4><hr class="m-auto">
+
+                                                <div class="login-container mr-auto ml-auto">
+                                            
+                                                        <form class="mt-3">
+                                                            <input type="email" placeholder="Your Email" required>
+                                                            <input type="password" placeholder="Your Password" required>
+                                        
+                                                            <div class="row mt-4">
+                                                                <div class="form-check col-6 flex align-items-baseline">
+                                                                    <input type="checkbox" name="RemindMe" class="agree-term mr-2">
+                                                                    <p class="green-text">Remember me</p>
+                                                                </div>
+                                                                <div class="form-check col-6">
+                                                                    <a href="">Forgot Password</a>
+                                                                </div>
+                                                            </div>
+                                                            <input type="submit" value="Sign in" class=" col-12">
+                                                        </form>
+                                                        <a href="memberReg.html" class="forgot-password text-secondary mt-2">
+                                                            Would like to become a member?
+                                                        </a>
+                                                </div>
+                                                <a href="" class="btn2 p-3 col-5 flex justify-content-center mt-3 ml-auto">Close</a>
+
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
                                 </ul>
 
                                 <div class="hamburger-menu d-lg-none">
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <span></span>
+    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDM4NC45NyAzODQuOTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxsaW5rIHR5cGU9InRleHQvY3NzIiBpZD0iZGFyay1tb2RlIiByZWw9InN0eWxlc2hlZXQiIGhyZWY9IiI+PC9saW5rPjxzdHlsZSB0eXBlPSJ0ZXh0L2NzcyIgaWQ9ImRhcmstbW9kZS1jdXN0b20tc3R5bGUiPjwvc3R5bGU+PHN0eWxlIHR5cGU9InRleHQvY3NzIiBpZD0iZGFyay1tb2RlLXRoZW1lLWNoYW5nZXItc3R5bGUiPjwvc3R5bGU+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8ZyBpZD0iTWVudV8xXyI+CgkJPHBhdGggZD0iTTEyLjAzLDEyMC4zMDNoMzYwLjkwOWM2LjY0MSwwLDEyLjAzLTUuMzksMTIuMDMtMTIuMDNjMC02LjY0MS01LjM5LTEyLjAzLTEyLjAzLTEyLjAzSDEyLjAzICAgIGMtNi42NDEsMC0xMi4wMyw1LjM5LTEyLjAzLDEyLjAzQzAsMTE0LjkxMyw1LjM5LDEyMC4zMDMsMTIuMDMsMTIwLjMwM3oiIGZpbGw9IiMxYjczNGYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCQk8cGF0aCBkPSJNMzcyLjkzOSwxODAuNDU1SDEyLjAzYy02LjY0MSwwLTEyLjAzLDUuMzktMTIuMDMsMTIuMDNzNS4zOSwxMi4wMywxMi4wMywxMi4wM2gzNjAuOTA5YzYuNjQxLDAsMTIuMDMtNS4zOSwxMi4wMy0xMi4wMyAgICBTMzc5LjU4LDE4MC40NTUsMzcyLjkzOSwxODAuNDU1eiIgZmlsbD0iIzFiNzM0ZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJCTxwYXRoIGQ9Ik0zNzIuOTM5LDI2NC42NjdIMTMyLjMzM2MtNi42NDEsMC0xMi4wMyw1LjM5LTEyLjAzLDEyLjAzYzAsNi42NDEsNS4zOSwxMi4wMywxMi4wMywxMi4wM2gyNDAuNjA2ICAgIGM2LjY0MSwwLDEyLjAzLTUuMzksMTIuMDMtMTIuMDNDMzg0Ljk3LDI3MC4wNTYsMzc5LjU4LDI2NC42NjcsMzcyLjkzOSwyNjQuNjY3eiIgZmlsbD0iIzFiNzM0ZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgoJPGc+Cgk8L2c+Cgk8Zz4KCTwvZz4KCTxnPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" width="50px" height="50px"/>
                                 </div><!-- .hamburger-menu -->
                             <!-- .header-bar-search -->
                             </nav><!-- .site-navigation -->
@@ -106,7 +106,7 @@
                     </div><!-- .row -->
                 </div><!-- .container -->
             </div><!-- .nav-bar -->
-        </header><!-- .site-header -->
+        </header>
 
         <div class="page-header-overlay">
             <div class="container">
@@ -135,7 +135,7 @@
 
     </div><!-- .container -->
 
-        <div class="container">
+        <div class="container p-5">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2" style="font-weight: bold;">
                     All payment to HUFQCOT should be made into our bank account details below;  <br> <br>
@@ -158,23 +158,14 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div> 
 
-    <footer class="site-footer mt-5">
+    <footer class="site-footer mt-6">
         <div class="footer-widgets">
             <div class="container">
                 <div class="row">
-                    <!-- <div class="col-12 col-md-6 col-lg-3">
-                        <div class="foot-about">
-                            <img src="./images/hufqot__1_-removebg-preview.png" alt="HUFQCOT" srcset="" width="50px" height="50px">
 
-                            <p>Incase you have any question or suggestion kindly drop us a message by filling the quick 
-                                form below we promise to threat all suggestion and messages with respect.</p>
-
-                        </div><!-- .foot-about -->
-                    <!-- </div>.col -->
-
-                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0 mb-5">
                         <div class="foot-contact">
                             <h2>Contact Us</h2>
 
@@ -188,15 +179,15 @@
                         </div><!-- .foot-contact -->
                     </div><!-- .col -->
 
-                    <div class="col-12 col-md-6 col-lg-3 mt-5 mt-lg-0">
+                    <div class="col-12 col-md-6 col-lg-3 mt-lg-0 mb-5">
                         <div class="quick-links flex flex-wrap">
                             <h2 class="w-100">Quick Links</h2>
 
                             <ul class="w-50">
-                                <li><a href="#">About </a></li>
-                                <li><a href="#">Terms of Use </a></li>
-                                <li><a href="#">News</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="#About">About </a></li>
+                                <li><a href="" class="" data-toggle="modal" data-target="#exampleModalLong">Terms of Use </a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="contact.html">Contact Us</a></li>
                             </ul>
 
                         </div><!-- .quick-links -->
@@ -204,23 +195,20 @@
 
 
 
-                    <div class="footer-box col-6">
-                        <h3>newsletter</h3>
-                        <p>Lorem ipsum dolor sit amet,tetur
-                          adipiscing elit. Aliquam vehicula mollis urna 
-                          vel dignissim.</p>
-                        <form action="#">
-                          <input type="text" placeholder="Your name" required="">
-                          <div class="input-box">
-                            <input type="text" placeholder="Your email here" required="">
-                            <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    <div class="footer-box col-12 col-md-8 col-lg-6 contact-form m-0">
+                        <h2 class="mb-4 mb-md-2">Newsletter</h2>
+                        <p>Subscribe to HUFQCOT Newsletter</p>
+
+                        <form>
+                          <input type="text" required placeholder="Your name" required="">
+                          <div class="flex align-items-baseline">
+                            <input type="text" required placeholder="Your email here" required="">
+                            <button type="submit" class=""><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
                           </div>
                         </form>
 
-                        <div class="">
-                            <div class="follow-us">
-                                <h2>Follow Us</h2>
-    
+                        <div class="pt-4">
+                            <div class="follow-us">    
                                 <ul class="follow-us flex flex-wrap align-items-center">
                                     <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                                     <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
@@ -234,12 +222,12 @@
             </div><!-- .container -->
         </div><!-- .footer-widgets -->
 
-        <div class="footer-bar">
+        <div class="footer-bar text-center">
             <div class="container">
                 <div class="row flex-wrap justify-content-center align-items-center">
 
                     <p class="footer-copyright">
-                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank">H.U.F.Q.C.O.T TECH TEAM</a>
+                        Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Designed with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#" target="_blank" class="text-dark">H.U.F.Q.C.O.T TECH TEAM</a>
 
                 </div><!-- .row -->
             </div><!-- .container -->
