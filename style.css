@@ -21,6 +21,9 @@ img {
 .orange-text {
     color: #e06f01 !important;
 }
+.break-word {
+    overflow-wrap: break-word;
+}
 
 footer {
     padding-top: 100px;
